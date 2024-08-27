@@ -26,3 +26,11 @@ It uses Puppeteer (with stealth plugin) to screenshot a website.
      ```bash
     npm run start
     ```
+
+
+Tips;
+
+- Be aware that you can screenshot a portion of the page, or the full length of a long scrollable page.
+- Targetted screenshots work best
+- You could make multiple calls to GPT.. firstly to do OCR (simply pull the text out) and another to structure it how you please.
+- This probably isn't as accurate as traditional scraping methods - however it will work on almost any website by default.
