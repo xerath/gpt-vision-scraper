@@ -1,0 +1,6 @@
+node_modules/
+dist/
+screenshots/
+package-lock.json
+pnpm-lock.json
+
