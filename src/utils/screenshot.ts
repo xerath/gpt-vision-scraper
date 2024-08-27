@@ -39,7 +39,6 @@ const clickCookiePopup = async (page: any) => {
 
                 if (isVisible) {
                     try {
-                        await button.click({ delay: 100 }); // Adding delay to mimic human interaction
                         console.log('dismissed cookie popup');
                         break;
                     } catch {}
