@@ -12,7 +12,7 @@ Give your response in JSON like so;
 
 {
     "headline": "This is the headline",
-    "image": This is a description of the image used
+    "image": "This is a description of the image used"
 }
 `
 
