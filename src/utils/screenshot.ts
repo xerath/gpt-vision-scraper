@@ -13,7 +13,9 @@ export const getScreenshot = async (url: string, page: any): Promise<Buffer> => 
         await clickCookiePopup(page)
 
         // take screenshot
-        const screenshotBuffer = await page.screenshot({ type: 'jpeg', quality: 100, fullPage: true });
+        // Note..  NON-fullscreen screenshots are generally preferable, less tokens / more accurate inference.
+        // However fullscreen should work for most websites
+        const screenshotBuffer = await page.screenshot({ type: 'jpeg', quality: 100, fullPage: false });
         screenshot = screenshotBuffer
 
         // save screenshot locally (optional, to debug.. be sure to create a screenshot directory in project root)
