@@ -21,7 +21,6 @@ export const getScreenshot = async (url: string, page: any): Promise<Buffer> => 
         // fs.writeFileSync(`./screenshots/${url.replace(/[^a-zA-Z0-9]/g, '_')}.jpg`, screenshotBuffer);
         return screenshot
     } catch (error) {
-        console.log('Error taking screenshot', error);
         throw error;
     }
 };
