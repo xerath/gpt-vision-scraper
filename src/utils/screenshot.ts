@@ -2,7 +2,6 @@
 
 export const getScreenshot = async (url: string, page: any): Promise<Buffer> => {
     
-    console.log('SCREENSHOTING URL', url);
     let screenshot: Buffer
 
     try {
