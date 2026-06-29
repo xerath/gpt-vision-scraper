@@ -37,13 +37,6 @@ const clickCookiePopup = async (page: any) => {
                     const style = window.getComputedStyle(el);
                     return style && style.display !== 'none' && style.visibility !== 'hidden';
                 }, button);
-
-                if (isVisible) {
-                    try {
-                        console.log('dismissed cookie popup');
-                        break;
-                    } catch {}
-                }
             }
         }
     } catch {}
